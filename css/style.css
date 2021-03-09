@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #1abc9c;
+}
+
+nav {
+    display: flex;
+    background: gray;
+}
+
+nav > a {
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+nav > a:hover {
+    background-color: teal;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+main > div {
+    text-align: center;
+    grid-row: 1;
+}
+
+.nyheter{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background: wheat;
+}
+
+.nyheter > div {
+    padding-top: 10px;
+}
+
+.nyheter > div > img {
+    max-width: 60%;
+    height: auto;
+}
+
+footer {
+    background: whitesmoke;
+}
