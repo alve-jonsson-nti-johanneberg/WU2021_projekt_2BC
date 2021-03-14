@@ -1,38 +1,78 @@
 * {
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
+    height: 20vh;
     text-align: center;
-    padding: 40px;
-    background: #1abc9c;
+    background: #45062E;
+}
+
+.rubrik {
+    font-size: 50px;
 }
 
 nav {
     display: flex;
-    background: gray;
+    background: #7F055F;
 }
 
 nav > a {
     text-align: center;
     color: whitesmoke;
-    padding: 20px;
+    padding: 15px;
+    width: 5%;
+    text-decoration: none;
 }
 
 nav > a:hover {
-    background-color: teal;
+    background-color: #45062E;
 }
 
 main {
-    width: 100vw;
+    height: 100vh;
+    background: #F7A1C4;
+}
+
+.hem {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
 
-main > div {
+.hem > div {
     text-align: center;
     grid-row: 1;
+}
+
+main > div > p {
+    text-align: left;
+}
+
+.omoss {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.omoss > div > img {
+    width: 30%;
+    height: auto;
+}
+
+.butik > p {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 80px;
+}
+
+.butik > img {
+    padding-top: 50px;
+    width: 70%;
+    height: auto;
 }
 
 .nyheter{
@@ -40,18 +80,55 @@ main > div {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    background: wheat;
+    background:#DD9AC2;
 }
 
 .nyheter > div {
     padding-top: 10px;
+    display: flex;
 }
 
 .nyheter > div > img {
     max-width: 60%;
     height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.produktinformation {
+    padding: 20px;
+    text-align: left;
 }
 
 footer {
-    background: whitesmoke;
+    height: 25vh;
+    padding-top: 15px;
+    background: #7F055F;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 80px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 800px) {
+    .rubrik {
+        font-size: 30px;
+    }
+
+    .hem {
+        grid-template-columns: repeat(1,100%);
+    }
+    .hem > div {
+        grid-row: initial;
+        overflow-y: scroll;
+    }
+
+    .omoss {
+        overflow-y: scroll;
+    }
+
+    nav > a {
+        width: 20%;
+    }
 }
